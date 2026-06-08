@@ -1,5 +1,6 @@
 import { Route } from "../types.ts";
 import { Logger } from "./logger.ts";
+import { setRoutes } from "./navigation.ts";
 
 export class Router {
     private routes: Route[] = [];
@@ -9,6 +10,7 @@ export class Router {
     constructor(routes: Route[]) {
         this.routes = routes;
         this.appElement = document.getElementById('app') as HTMLElement;
+        setRoutes(this.routes);
 
         Logger.log(`Router inicializován s ${routes.length} routami`,
             { routes: routes.map(r => r.name) }, 'Router');

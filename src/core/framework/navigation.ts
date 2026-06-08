@@ -12,7 +12,7 @@ export function path(routeName: string, params: Record<string, string | number> 
     const route = routes.find(r => r.name === routeName);
 
     if (!route) {
-        Logger.error(`Ruta s názvem "${routeName}" nebyla nalezena.`, null, 'Navigation');
+        Logger.error(`Routa s názvem "${routeName}" nebyla nalezena.`, null, 'Navigation');
         return "#";
     }
 
