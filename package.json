@@ -1,6 +1,6 @@
 {
   "name": "@VaclavKozelka-OpenSource/spa-framework",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "module",
   "files": ["src"],
   "main": "./src/index.ts",
